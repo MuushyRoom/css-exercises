@@ -20,10 +20,45 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  padding: 20px;
+
+
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+
 }
+
+
+.box2{
+  margin-left: 15px;
+   flex: 1;
+}
+
+.box2 button{
+ margin-top: 1rem;
+
+}
+
+.header{
+
+  font-size: larger;
+  font-weight: bold;
+}
+
+.text{
+  margin-top: 15px;
+  font-weight:490;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+  text-align:start;
+}
+
+
+
+
+
+
+
 
 .icon {
   color: royalblue;
@@ -69,15 +104,4 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
-}
-.header {
-  font-weight: 900;
-  font-size: 20px;
-  margin: 5px;
-}
-.text{
-  margin-bottom:10px;
-}
-.box1,.box2,.box3 {
-  margin:2px;
 }

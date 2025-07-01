@@ -2,8 +2,8 @@
 
 body {
   height: 100vh;
-  margin: 0;
-  overflow: hidden;
+  margin: 0; 
+  padding: 0;
   font-family: Roboto, sans-serif;
 }
 
@@ -16,8 +16,6 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  margin:10px 0 ;
-  padding: 8px;
 }
 
 input {
@@ -26,43 +24,56 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* CHANGES HERE */
+
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-}     
-
-.header,.footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+  width: 100%; /* Fill the width of the parent */
+  min-height: 100vh; /* Expand to at least the full viewport height */
+  overflow: hidden;
 }
+
+
+
+
 .content{
-  display: flex;
-  flex-direction: column;
-  margin:10%;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
+  justify-self: center;
 }
 
-.header li{
-display: inline;
-margin-right: 20px;
+.buttons,.input{
+  align-self: center;
+  justify-self: center;
+  padding: 15px;
 }
 
-a{
-  color: gray;
-  text-decoration: none;
-}
-.footer li{
-  display: inline;
-  margin-right: 20px;
-}
 .footer{
-  background-color: #eee;
-  position: absolute;
-    bottom: 30px;
-    width: 100%;
+  background-color: gainsboro;
+  color: rgb(97, 94, 94);
+}
+
+
+.header,.footer {
+  display: flex;
+  justify-content: space-between;
 }
